@@ -1,27 +1,132 @@
 <template>
-  <div class="container">
+  <v-container class="container">
     <div class="imageProfile">
       <img src="../assets/me.jpg" aspect-ratio="1" class="image" cover />
     </div>
-    <div class="nameCont">
-      <h1 class="hOne">
-        I'm Keith Anesu Mbofana
-        <span class="profession">.Systems Developer (ICT)</span>
-      </h1>
+    <div class="container2">
+      <div class="nameCont">
+        <h1 class="hOne">
+          I'm Keith Anesu Mbofana
+          <span class="profession">.Systems Developer (ICT)</span>
+        </h1>
+      </div>
+
+      <v-sheet class="shortMe">
+        I am a passionate developer with a keen interest in technology. I love
+        programming and enjoy exploring new technologies and frameworks. I am
+        always looking for ways to improve my skills and stay up-to-date with
+        the latest trends in the industry. I am a quick learner and enjoy
+        working on challenging projects that push me to my limits. I am a team
+        player and enjoy collaborating with others to achieve common goals. I am
+        excited about the future of technology and look forward to being a part
+        of it.
+      </v-sheet>
     </div>
+  </v-container>
 
-    <v-sheet class="shortMe">
-      I am a passionate developer with a keen interest in technology. I love
-      programming and enjoy exploring new technologies and frameworks. I am
-      always looking for ways to improve my skills and stay up-to-date with the
-      latest trends in the industry. I am a quick learner and enjoy working on
-      challenging projects that push me to my limits. I am a team player and
-      enjoy collaborating with others to achieve common goals. I am excited
-      about the future of technology and look forward to being a part of it.
-    </v-sheet>
+  <div class="mobileSkills">
+    <table class="tableDesign">
+      <tr class="rowsDesign">
+        <td class="dataText">Node.JS</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">PHP</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">Python</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">HTML</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
 
-    <Service />
+      <tr class="rowsDesign">
+        <td class="dataText">CSS</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">Javascript</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">VueJS</td>
+        <td class="dataText">
+          <v-progress-linear color="white" model-value="80"></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">React JS</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="100"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">MySQL</td>
+        <td class="dataText">
+          <v-progress-linear
+            color="white"
+            model-value="700"
+          ></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">Java</td>
+        <td class="dataText">
+          <v-progress-linear color="white" model-value="60"></v-progress-linear>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">MongoDB</td>
+        <td class="dataText">
+          <v-progress-linear color="white" model-value="60"></v-progress-linear>
+          <v-progress-circular> </v-progress-circular>
+        </td>
+      </tr>
+      <tr class="rowsDesign">
+        <td class="dataText">.Net</td>
+        <td class="dataText">
+          <v-progress-linear color="white" model-value="40"></v-progress-linear>
+        </td>
+      </tr>
+    </table>
   </div>
+  <Service />
 </template>
 
 <script>
@@ -67,41 +172,36 @@ export default {
   margin: auto;
 }
 .shortMe {
-  width: 49vw;
+  width: 48vw;
   justify-self: left;
-  border: 1px;
-  border-style: solid;
-  border-color: aqua;
+
   color: aliceblue;
   padding: 10px;
-  margin: auto;
-  /* margin-left: 50px; */
   margin-top: 2%;
   border-radius: 2px;
   background-color: transparent;
 }
 .container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10vh;
+}
+.container2 {
+  display: flex;
   flex-direction: column;
-  margin-left: 50px;
-  /* overflow: scroll; */
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  /* background-color: brown; */
 }
 .imageProfile {
-  height: 35vh;
-  width: 32vh;
+  height: 40vh;
+  width: 40vh;
   border-radius: 100%;
-  position: absolute;
   background-color: beige;
   margin-left: 50px;
   margin-top: 40px;
 }
 .image {
-  height: 35vh;
-  width: 32vh;
+  height: 40vh;
+  width: 40vh;
   border-radius: 100%;
 }
 
@@ -126,5 +226,44 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
+}
+
+.mobileSkills {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageProfile {
+    margin-left: 0px;
+  }
+  .nameCont {
+    align-self: self-start;
+    justify-self: self-start;
+    width: 60vw;
+    margin: 0%;
+  }
+  .hOne {
+    color: aqua;
+    font-family: cursive, "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.5in;
+    font-style: italic;
+  }
+
+  .mobileSkills {
+    display: flex;
+    justify-content: center;
+    /* background-color: brown; */
+  }
+  .tableDesign {
+    width: 60%;
+  }
+  .shortMe {
+    width: 80%;
+  }
 }
 </style>

@@ -1,29 +1,33 @@
 <template>
-  <div class="container">
+  <v-container class="serviceContainer">
     <h3 class="specialityText">.Speciality</h3>
+    <div class="container">
+      <div class="cardsDisplay">
+        <v-card
+          class="cardBG my-8"
+          max-width="344"
+          elevation="16"
+          v-for="developerSkill in developerSkills"
+        >
+          <v-card-item>
+            <v-card-title class="cardTitle">
+              {{ developerSkill.skillTitle }}
+            </v-card-title>
+            <v-card-subtitle class="cardSubTitle"
+              >{{ developerSkill.category }}
+            </v-card-subtitle>
+          </v-card-item>
 
-    <div class="cardsDisplay">
-      <v-card
-        class="cardBG my-8"
-        max-width="344"
-        elevation="16"
-        v-for="developerSkill in developerSkills"
-      >
-        <v-card-item>
-          <v-card-title class="cardTitle">
-            {{ developerSkill.skillTitle }}
-          </v-card-title>
-          <v-card-subtitle class="cardSubTitle"
-            >{{ developerSkill.category }}
-          </v-card-subtitle>
-        </v-card-item>
-
-        <v-card-text class="cardText">
-          {{ developerSkill.description }}
-        </v-card-text>
-      </v-card>
+          <v-card-text class="cardText">
+            {{ developerSkill.description }}
+          </v-card-text>
+          <div class="hireMeBtns">
+            <v-btn rounded="xs" size="large">Hire Me</v-btn>
+          </div>
+        </v-card>
+      </div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -67,20 +71,17 @@ export default {
   margin-left: 35px;
   font-family: cursive;
   font-size: 0.5in;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .cardsDisplay {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-
-  /* justify-content: space-between; */
-  /* justify-content: center;
-  margin-left: 20px; */
+  justify-content: space-between;
+  width: 100vw;
 }
 .cardBG {
   background-color: rgb(32, 29, 29);
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .cardTitle {
@@ -92,8 +93,18 @@ export default {
 .cardText {
   color: aliceblue;
 }
+.serviceContainer {
+  margin-left: 10vh;
+  /* background-color: rgb(125, 124, 124); */
+  border-radius: 5px;
+}
 .container {
-  width: 80%;
-  margin-left: 5px;
+  display: flex;
+  position: relative;
+}
+.hireMeBtns {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
 }
 </style>
