@@ -53,7 +53,7 @@ export default {
         skillTitle: "APIs",
         category: "PHP, Python, Node.JS, Java",
         description:
-          "",
+          "Highly skilled developer with 5+ years of experience in designing, developing, and deploying scalable APIs using Java, Node.js, PHP, and Python. Proficient in creating RESTful APIs, microservices, and cloud-native applications. Strong understanding of API security, performance optimization, and versioning. Proficient in Agile development methodologies and collaborative version control systems like Git.",
       },
     ];
     return {};

@@ -185,6 +185,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 40px;
   margin-left: 10vh;
   /* background-color: blueviolet; */
   width: 100vw;
