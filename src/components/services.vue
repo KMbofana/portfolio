@@ -41,19 +41,19 @@ export default {
         skillTitle: "Full-stack Web Development",
         category: "websites and web applications",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Developing intutitive web applications and websites is my drive. I have worked with react and laravel on a couple of applications for the companies i have worked for. This year am exploring the beauty of Vue js ✨",
       },
       {
         skillTitle: "UI/UX Design",
-        category: "Adobe XD and Figma",
+        category: "Adobe XD, Figma and Illustrator",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Aesthetical and user friendly designs are my motive. I work with Adobe XD, Figma and Adobe Illustrator as my magical tools 💪. Several other tools available for exploitation upon research ",
       },
       {
         skillTitle: "APIs",
         category: "PHP, Python, Node.JS, Java",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "",
       },
     ];
     return {};
@@ -106,5 +106,11 @@ export default {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .serviceContainer {
+    margin-left: 0%;
+  }
 }
 </style>

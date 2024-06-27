@@ -186,18 +186,18 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   margin-left: 10vh;
+  /* background-color: blueviolet; */
+  width: 100vw;
 }
 .container2 {
   display: flex;
   flex-direction: column;
 }
 .imageProfile {
-  height: 40vh;
-  width: 40vh;
-  border-radius: 100%;
-  background-color: beige;
-  margin-left: 50px;
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  /* background-color: beige; */
+  width: 100%;
 }
 .image {
   height: 40vh;
@@ -236,6 +236,8 @@ export default {
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 0%;
   }
   .imageProfile {
     margin-left: 0px;
