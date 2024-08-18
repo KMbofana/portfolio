@@ -6,7 +6,6 @@
         <v-card
           class="cardBG my-8"
           max-width="344"
-          elevation="16"
           v-for="developerSkill in developerSkills"
         >
           <v-card-item>
@@ -68,7 +67,7 @@ export default {
 <style scoped>
 .specialityText {
   color: aliceblue;
-  margin-left: 35px;
+  margin-left: 60px;
   font-family: cursive;
   font-size: 0.5in;
   /* margin-top: 10px; */
@@ -77,7 +76,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100vw;
+  width: 80vw;
+  margin-left: 60px;
 }
 .cardBG {
   background-color: rgb(32, 29, 29);
