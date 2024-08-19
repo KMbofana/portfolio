@@ -201,7 +201,7 @@ export default {
   width: 100%;
 }
 .image {
-  height: 40vh;
+  height: 50vh;
   width: 40vh;
   border-radius: 100%;
 }
