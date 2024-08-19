@@ -1,7 +1,7 @@
 <template>
   <v-container class="container">
     <div class="imageProfile">
-      <img src="../assets/me.jpg" aspect-ratio="1" class="image" cover />
+      <img src="../assets/pme5.jpg" aspect-ratio="1" class="image" cover />
     </div>
     <div class="container2">
       <div class="nameCont">
@@ -201,7 +201,7 @@ export default {
   width: 100%;
 }
 .image {
-  height: 40vh;
+  height: 50vh;
   width: 40vh;
   border-radius: 100%;
 }
