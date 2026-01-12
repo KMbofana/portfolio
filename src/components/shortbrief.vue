@@ -1,17 +1,14 @@
 <template>
-  <v-container class="container">
-    <div class="imageProfile">
-      <img src="../assets/pme5.jpg" aspect-ratio="1" class="image" cover />
-    </div>
-    <div class="container2">
-      <div class="nameCont">
-        <h1 class="hOne">
-          I'm Keith Anesu Mbofana
-          <span class="profession">.Systems Developer (ICT)</span>
+<v-container fluid class="pa-0">
+  <v-sheet class="container position-relative pa-6" elevation="4" >
+    <div class="">
+      
+        <h1 class="text-h4 text-wrap">
+          Name: Keith Anesu Mbofana
         </h1>
-      </div>
+        <p class="profession">Job Profession: Software Engineer</p>
 
-      <v-sheet class="shortMe">
+      <p class="shortMe text-wrap">
         I am a passionate developer with a keen interest in technology. I love
         programming and enjoy exploring new technologies and frameworks. I am
         always looking for ways to improve my skills and stay up-to-date with
@@ -20,112 +17,11 @@
         player and enjoy collaborating with others to achieve common goals. I am
         excited about the future of technology and look forward to being a part
         of it.
-      </v-sheet>
+      </p>
     </div>
+   </v-sheet>
   </v-container>
 
-  <div class="mobileSkills">
-    <table class="tableDesign">
-      <tr class="rowsDesign">
-        <td class="dataText">Node.JS</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">PHP</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">Python</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">HTML</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-
-      <tr class="rowsDesign">
-        <td class="dataText">CSS</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">Javascript</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">VueJS</td>
-        <td class="dataText">
-          <v-progress-linear color="white" model-value="80"></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">React JS</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="100"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">MySQL</td>
-        <td class="dataText">
-          <v-progress-linear
-            color="white"
-            model-value="700"
-          ></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">Java</td>
-        <td class="dataText">
-          <v-progress-linear color="white" model-value="60"></v-progress-linear>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">MongoDB</td>
-        <td class="dataText">
-          <v-progress-linear color="white" model-value="60"></v-progress-linear>
-          <v-progress-circular> </v-progress-circular>
-        </td>
-      </tr>
-      <tr class="rowsDesign">
-        <td class="dataText">.Net</td>
-        <td class="dataText">
-          <v-progress-linear color="white" model-value="40"></v-progress-linear>
-        </td>
-      </tr>
-    </table>
-  </div>
   <Service />
 </template>
 
@@ -158,7 +54,7 @@ export default {
   font-style: italic;
 }
 .profession {
-  color: aliceblue;
+  color: #000;
   font-size: xx-large;
   font-variant-caps: titling-caps;
   text-decoration: wavy;
@@ -172,23 +68,14 @@ export default {
   margin: auto;
 }
 .shortMe {
-  width: 48vw;
-  justify-self: left;
+  color: #000;
 
-  color: aliceblue;
-  padding: 10px;
-  margin-top: 2%;
-  border-radius: 2px;
-  background-color: transparent;
 }
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
-  margin-left: 10vh;
+  width: 100%;
   /* background-color: blueviolet; */
-  width: 100vw;
 }
 .container2 {
   display: flex;
@@ -201,8 +88,8 @@ export default {
   width: 100%;
 }
 .image {
-  height: 50vh;
-  width: 40vh;
+  /* height: 50vh; */
+  /* width: 40vh; */
   border-radius: 100%;
 }
 
@@ -229,9 +116,7 @@ export default {
   margin: 10px;
 }
 
-.mobileSkills {
-  display: none;
-}
+
 
 @media (max-width: 768px) {
   .container {
@@ -257,11 +142,6 @@ export default {
     font-style: italic;
   }
 
-  .mobileSkills {
-    display: flex;
-    justify-content: center;
-    /* background-color: brown; */
-  }
   .tableDesign {
     width: 60%;
   }
