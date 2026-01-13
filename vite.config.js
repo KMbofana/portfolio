@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: './',  // Important for Vercel static hosting
+  base: '/',  // Important for Vercel static hosting
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
