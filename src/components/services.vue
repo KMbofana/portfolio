@@ -24,10 +24,12 @@
     </v-row>
         
   </v-container>
+  <Project />
 </template>
 
 <script>
 import HiringForm from "./HireForm.vue";
+import Project from "./projects.vue";
 
 export default {
   name: "PortifolioServices",
@@ -71,6 +73,7 @@ export default {
 
   components: {
     HiringForm,
+    Project
   },
 };
 </script>

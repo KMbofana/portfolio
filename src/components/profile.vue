@@ -5,10 +5,12 @@
         <Shortbrief />
       </v-col>
     </v-row>
+    
   </v-container>
 </template>
 <script>
 import Shortbrief from "./shortbrief.vue";
+
 
 
 export default {
