@@ -6,6 +6,7 @@ import SideView from "./components/SideView.vue"
 
 const { mdAndUp } = useDisplay()
 const drawer = ref(mdAndUp.value)
+ const overlay = ref(false)
 
 watch(mdAndUp, val => {
   drawer.value = val
@@ -23,8 +24,10 @@ const openDrawer = () => {
         <v-icon>mdi-menu</v-icon>
       </v-btn>
 
-      <div class="d-flex w-100 justify-end mr-4 ">
-        <img src="./assets/me.jpg" class="rounded-circle border" height="60" width="60"/>
+      <div class="d-flex w-100 justify-end mr-4">
+        <v-btn icon height="60" width="60">
+          <img src="./assets/me.jpg" class="rounded-circle border" height="60" width="60" @click="overlay = !overlay"/>
+        </v-btn>
       </div>
     </v-app-bar>
 
@@ -34,7 +37,16 @@ const openDrawer = () => {
     >
       <SideView />
     </v-navigation-drawer>
-
+    <v-overlay v-model="overlay" class="d-flex fill-height align-center justify-center">
+          <img
+            src="./assets/me.jpg"
+            class="rounded-circle border"
+            height="300"
+            width="300"
+            
+          />
+          <h1 class="text-center text-white">Hey It's Keith</h1>
+    </v-overlay>
     <v-main>
       <Profile />
     </v-main>

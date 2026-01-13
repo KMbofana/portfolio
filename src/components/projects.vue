@@ -17,8 +17,10 @@
 
           <v-card-text class="">
             {{ project.description }}
-            <v-btn variant="text" size="small" :href="project.url" class="font-weight-bold" color="red">VISIT</v-btn>
           </v-card-text>
+          <v-card-actions>
+            <v-btn variant="flat" block :href="project.url" class="font-weight-bold" color="#1B1B1B">VISIT SITE</v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>

@@ -3,12 +3,12 @@
   <v-sheet class="container position-relative pa-6" elevation="4" >
     <div class="">
       
-        <h1 class="text-h4 text-wrap">
+        <h1 class="text-h6 text-wrap font-weight-bold">
           Name: Keith Anesu Mbofana
         </h1>
-        <p class="profession">Job Profession: Software Engineer</p>
+        <p class="text-h6 font-weight-bold">Job Profession: Software Engineer</p>
 
-      <p class="shortMe text-wrap">
+      <p class="text-wrap text-justify">
         I am a passionate developer with a keen interest in technology. I love
         programming and enjoy exploring new technologies and frameworks. I am
         always looking for ways to improve my skills and stay up-to-date with
@@ -66,10 +66,6 @@ export default {
   align-self: center;
   justify-self: center;
   margin: auto;
-}
-.shortMe {
-  color: #000;
-
 }
 .container {
   display: flex;
@@ -145,8 +141,6 @@ export default {
   .tableDesign {
     width: 60%;
   }
-  .shortMe {
-    width: 80%;
-  }
+
 }
 </style>
