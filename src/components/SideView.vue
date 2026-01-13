@@ -148,23 +148,26 @@
                     </tr>
                     </tbody>
                   </v-table>              
-      <v-btn rounded="xs" size="large" block color="#1B1B1B" class="text-white">Let's Do A Project</v-btn>
+      <v-btn rounded="xs" block color="#1B1B1B" class="text-white" @click="dialog = !dialog">Schedule Meeting</v-btn>
     </v-card>
-
+<v-dialog v-model="dialog">
+  <HireForm @close-dialog="closeDialog"/>
+</v-dialog>
 
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import HireForm from './HireForm.vue';
 
-const drawer = ref(false)
-const openDrawer = ()=>{
-    drawer.value = !drawer.value
-    console.log("drawer", drawer.value)
-}
+const dialog = ref(false)
+
 
 const age = new Date().getFullYear() - 1996;
 
+const closeDialog = ()=>{
+  dialog.value = false;
+}
 
 </script>
 

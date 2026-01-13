@@ -17,8 +17,10 @@
 
           <v-card-text class="">
             {{ developerSkill.description }}
-            <v-btn variant="text" size="small" href="https://wa.me/263779363209" class="font-weight-bold" color="red">HIRE ME</v-btn>
           </v-card-text>
+          <v-card-actions class="d-flex justify-end" no-data>
+            <v-btn variant="flat" size="small" href="https://wa.me/263779363209" class="font-weight-bold" color="red">Request Service</v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
